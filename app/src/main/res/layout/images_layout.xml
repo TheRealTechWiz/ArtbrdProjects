@@ -1,31 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
-    <TextView
+
+    <ImageView
+        android:id="@+id/imageInLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:src="@drawable/image_first"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        tools:layout_editor_absoluteX="0dp" />
+
     <TextView
+        android:id="@+id/text1InLayout"
+        app:layout_constraintTop_toBottomOf="@id/imageInLayout"
+        app:layout_constraintStart_toStartOf="@id/imageInLayout"
+        android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf=""/>
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:textColor="#000000"
+        android:text="Nazariyaa"
+        android:textSize="28sp" />
+    <TextView
+        android:id="@+id/text2InLayout"
+        app:layout_constraintTop_toBottomOf="@id/text1InLayout"
+        app:layout_constraintStart_toStartOf="@id/imageInLayout"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/josefin_sans_semibold"
+        android:text="3 days left"
+        android:textSize="16sp"/>
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginTop="112dp"
         android:progress="60"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:progressDrawable="@drawable/progress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvcomp" />
+        app:layout_constraintEnd_toEndOf="@id/imageInLayout"
+        app:layout_constraintTop_toBottomOf="@+id/imageInLayout"
+        app:layout_constraintBottom_toBottomOf="@id/text2InLayout"/>
 
     <TextView
         android:id="@+id/textView2"

@@ -73,29 +73,34 @@
         app:layout_constraintStart_toEndOf="@id/tvog"
         app:layout_constraintTop_toTopOf="@id/tvog" />
 
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
-        android:layout_marginTop="112dp"
-        android:progress="60"
-        android:progressDrawable="@drawable/progress"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvcomp" />
+<!--       <ProgressBar-->
+    <!--        android:id="@+id/progressBar"-->
+    <!--        style="?android:attr/progressBarStyleHorizontal"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginStart="168dp"-->
+    <!--        android:layout_marginLeft="168dp"-->
+    <!--        android:layout_marginTop="112dp"-->
+    <!--        android:progress="60"-->
+    <!--        android:progressDrawable="@drawable/progress"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/tvcomp" />-->
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:text="60%"
-        android:textColor="#000000"
-        android:gravity="center"
-        app:layout_constraintStart_toStartOf="@id/progressBar"
-        app:layout_constraintTop_toTopOf="@id/progressBar"
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView2"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:text="60%"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:gravity="center"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/progressBar"-->
+    <!--        app:layout_constraintTop_toTopOf="@id/progressBar" />-->
 
-        />
-
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvog"
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
