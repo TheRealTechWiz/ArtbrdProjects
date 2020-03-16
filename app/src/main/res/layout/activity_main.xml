@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <ImageView
@@ -38,8 +38,8 @@
         android:textSize="32sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView"
-        android:layout_marginTop="25.5dp"
-        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="17dp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="74dp" />
 
@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvproj"
         android:layout_marginLeft="17dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
         tools:layout_editor_absoluteX="21dp"
         tools:layout_editor_absoluteY="143dp" />
 
@@ -102,5 +102,6 @@
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
         app:layout_constraintTop_toBottomOf="@id/tvog"
+        android:layout_marginTop="23dp"
         tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

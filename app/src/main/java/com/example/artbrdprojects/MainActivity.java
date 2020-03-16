@@ -23,11 +23,14 @@ public class MainActivity extends AppCompatActivity {
         list.add(new MyWord(R.drawable.image_first,"fbb","0 days left",80));
 
         RecyclerView listView = findViewById(R.id.recycler_view);
+        listView.setHasFixedSize(true);
+
         CustomAdapter adapter = new CustomAdapter(list);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.VERTICAL, false);
+
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);
         listView.setLayoutManager(mLayoutManager);
         listView.setAdapter(adapter);
-        listView.setItemAnimator(new DefaultItemAnimator());
+        //listView.setItemAnimator(new DefaultItemAnimator());
 
 
     }
