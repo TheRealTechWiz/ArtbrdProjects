@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardLayout"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/card"
+    android:layout_marginRight="16dp"
+    android:layout_marginEnd="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvpepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PEPPER"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        android:fontFamily="@font/josefin_sans_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/tvcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="green"
+        android:textColor="@color/white"
+        android:fontFamily="@font/josefin_sans_light"
+        android:textSize="61sp"
+        app:layout_constraintStart_toStartOf="@id/tvpepper"
+        app:layout_constraintTop_toBottomOf="@id/tvpepper"/>
+    <TextView
+        android:id="@+id/tvrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹399 - ₹8,500"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:fontFamily="@font/josefin_sans_semibold"
+        app:layout_constraintBottom_toTopOf="@id/tvservice"
+        app:layout_constraintEnd_toEndOf="@id/tvservice"/>
+    <TextView
+        android:id="@+id/tvservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="per service"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/josefin_sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
